@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expenses Tracker</title>
+  
+</head>
+<body>
+  <div>
+  <h3>Expenses Tracker</h3>
+</div>
+  <form>
+    <br>
+    
+      <label  class="form-label">Enter Expense Amount : </label>
+      <input type="number" class="form-control" id="exp" required/>
+    
+    <br><br>
+    
+      <label class="form-label">Enter Description : </label>
+      <input type="text" class="form-control" id="des" required/>
+    
+    <br><br>
+    
+      <label class="form-label">Choose a Category : </label>
+        <select class="form-select" id="cat" required>
+          <option selected>-- Category --</option>
+          <option value="Fuel">Fuel</option>
+          <option value="Movie">Movie</option>
+          <option value="Electricity">Electricity</option>
+          <option value="Water">Water</option>
+        </select>
+    
+    <br><br>
+    <input type="submit" id="button" value="Add Expenses" class="btn btn-primary">
+  
+  </form>
+  <br>
+  <div class="output">
+    <table>
+      <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+      <tbody id="user-table"></tbody>
+    </table>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
